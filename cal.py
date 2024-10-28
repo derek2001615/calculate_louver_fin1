@@ -107,7 +107,7 @@ def set_value():
     T_o1=21                          #T_o1:airside inlet temperature                                                                             unit:°C
     return V_c,L_p,viscosity_o,L_alpha,F_p,H,F_d,L_l,T_p,delta_f,Pr_o,A_o,A_c,density_m,Cp_o,T_o2,T_o1
 
-if __name__ == '__main__':
+if __name__ == '__main__':    
     V_c, L_p, viscosity_o, L_alpha, F_p, H, F_d, L_l, T_p, delta_f, Pr_o, A_o, A_c, density_m, Cp_o, T_o2, T_o1 = set_value()
 
     cal_Re_Lp(V_c,L_p,viscosity_o)
@@ -119,6 +119,5 @@ if __name__ == '__main__':
     cal_heat_transfer(A_o,T_o2,T_o1)
 
     print(cal_Re_Lp(V_c,L_p,viscosity_o))
-
-
+    print(cal_h_o(density_m,V_c,Cp_o,Pr_o))
 

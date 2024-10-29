@@ -1,23 +1,3 @@
-class cal:
-    def __init__(self, V_c, L_p, viscosity_o, L_alpha, F_p, H, F_d, L_l, T_p, delta_f, Pr_o, A_o, A_c, density_m, Cp_o, T_o2, T_o1):
-        self.V_c = V_c
-        self.L_p = L_p
-        self.viscosity_o = viscosity_o
-        self.L_alpha = L_alpha
-        self.F_p = F_p
-        self.H = H
-        self.F_d = F_d
-        self.L_l = L_l
-        self.T_p = T_p
-        self.delta_f = delta_f
-        self.Pr_o = Pr_o
-        self.A_o = A_o
-        self.A_c = A_c
-        self.density_m = density_m
-        self.Cp_o = Cp_o
-        self.T_o2 = T_o2
-        self.T_o1 = T_o1
-
 def cal_Re_Lp(V_c,L_p,viscosity_o):
     Re=V_c*L_p/viscosity_o
     return Re
